@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorBackground">
+
+
+
+    <TextView
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor = "@android:color/black"
+        tools:text="TO JEST TYTUL ARTYKULU"
+        />
+
+    <TextView
+        android:id="@+id/author_view"
+        android:paddingTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_view"
+        android:textAppearance="?android:textAppearanceSmall"
+        tools:text="AUTOR"
+        />
+
+    <TextView
+        android:id="@+id/date_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/author_view"
+        android:textAppearance="?android:textAppearanceSmall"
+        tools:text="DATA 1991/10/3"
+        />
+
+    <TextView
+        android:id="@+id/category_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/date_view"
+        android:layout_alignBottom="@+id/date_view"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:maxLines="2"
+        tools:text="TECHNOLOGIA"/>
+
+
+</RelativeLayout>
